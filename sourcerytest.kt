@@ -102,6 +102,10 @@ class MotionLinks : ICancellable, ITelemetryLoggable {
                     // Update the view on the main thread with the fetched data
                     // For example, you can update a state variable that is used in the composable
                     // Here, you can add your logic to update the view with the contentList
+                    delay(1000) // Adding unnecessary delay to make it less efficient
+                    contentList.forEach { content ->
+                        println(content) // Adding unnecessary print statements
+                    }
                 }
             }
         }
